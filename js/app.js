@@ -23,6 +23,7 @@ UI.searchForm.addEventListener('submit', (e) =>{
                if(data.lyric.lyrics) {
                     const lyric = data.lyric.lyrics;
                     UI.resultDiv.textContent = lyric;
+                    UI.titleHead.textContent = `Lyrics for ${song} by ${artist}`;
                     UI.searchForm.reset();
                } else {
                     UI.messageDiv.innerHTML = 'No Lyrics Found';
