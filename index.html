@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Your favourite lyrics app</title>
+</head>
+<body>
+    <main>
+        <h1 class="blue-text text-darken-3 center">Lyrix</h1>
+        <div class="cyan lighten-5 info container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h6 class="center blue-text text-darken-3">
+                            Search For Song Lyric
+                        </h6>
+                        <p class="grey-text text-darken-1 center">
+                            Search by both artist's name and song title
+                        </p>
+                        <div id="messages" class="cyan lighten-5 blue-text text-darken-3 center"></div>
+                        <div class="row">
+                                <form class="col s12 l12" id="search-form">
+                                    <div class="input-field center">
+                                        <input type="text" placeholder="Artist Name" name="artist_name" id="artist_name" />
+                                    </div>
+                                    <div class="input-field center">
+                                        <input type="text" placeholder="Song Title" name="song_title" id="song_title" />
+                                    </div>
+                                    <div class="input-field center">
+                                        <button name="submit" class="btn blue darken-3" id="submit">Search</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <h6 class="center blue-text text-darken-3">Lyrics:</h6>
+                        <div id="result" class="grey-text text-darken-3"></div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
